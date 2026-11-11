@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en" data-theme="graphite">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free profit calculator for Facebook businesses in Bangladesh · Greyrock Digital</title>
+  <meta name="description" content="Find your real profit per order after COD returns, courier charges, bKash fees and ad costs. Free profit calculator for Bangladeshi f-commerce sellers by Greyrock Digital. No login." />
+  <meta name="theme-color" content="#0A0C0F" />
+  <meta property="og:title" content="Is your Facebook business actually making money?" />
+  <meta property="og:description" content="Free profit calculator for Bangladeshi sellers: COD returns, courier fees, bKash charges and ad costs included." />
+  <script src="/assets/js/site-data.js"></script>
+  <script src="/assets/js/defaults.js"></script>
+  <script src="/assets/js/site-config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/sections.css" />
+  <link rel="stylesheet" href="/tools/tools.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Primary">
+      <a href="/" class="brand" aria-label="Greyrock Digital home"><span class="brand-mark" aria-hidden="true"></span><span class="brand-sub" aria-hidden="true">digital</span></a>
+      <ul class="nav-links">
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#results">Results</a></li>
+        <li><a href="/tools/" aria-current="page">Free products</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm js-open-lead" data-source="tool:profit-calculator">Free audit
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </nav>
+    <div class="mobile-menu glass" id="mobile-menu" hidden>
+      <a href="/#services">Services</a><a href="/#results">Results</a><a href="/tools/">Free products</a><a href="/#pricing">Pricing</a><a href="/#faq">FAQ</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="tool-page" id="calculator" aria-labelledby="calc-title">
+      <div class="tool-glow" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="container">
+        <header class="tool-head sr">
+          <a class="crumb" href="/tools/">← All free products</a>
+          <span class="kicker"><i></i>Free product · Profit calculator</span>
+          <h1 id="calc-title" class="h2">Is your Facebook business<br /><span class="grad-text">actually making money?</span></h1>
+          <p class="bn" lang="bn">আপনার ব্যবসার আসল লাভ কত?</p>
+          <p class="lead">Most sellers count sales. This counts COD returns, courier charges, bKash fees and ad costs, then shows your real profit, the most you can pay per order in ads, and the price you should charge.</p>
+          <span class="privacy-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Your numbers stay in your browser. Nothing is sent unless you ask us for help.</span>
+        </header>
+
+        <div class="presets sr" role="group" aria-label="Start from a typical business">
+          <span>Start from:</span>
+          <button class="fchip" data-preset="fashion">Fashion</button>
+          <button class="fchip" data-preset="beauty">Beauty & skincare</button>
+          <button class="fchip" data-preset="gadgets">Gadgets</button>
+          <button class="fchip" data-preset="food">Food / home kitchen</button>
+          <button class="fchip" data-preset="default">Reset</button>
+        </div>
+
+        <div class="calc">
+          <form class="calc-inputs" id="calc-form" novalidate onsubmit="return false">
+            <fieldset class="cgroup sr">
+              <legend><b>1</b>Your product</legend>
+              <div class="crow">
+                <div class="cfield"><label for="c-price">Selling price</label><div class="affix"><span>৳</span><input id="c-price" data-k="price" type="number" inputmode="decimal" min="0" step="10" /></div></div>
+                <div class="cfield"><label for="c-cost">Product cost (what you pay)</label><div class="affix"><span>৳</span><input id="c-cost" data-k="cost" type="number" inputmode="decimal" min="0" step="10" /></div></div>
+              </div>
+              <div class="cfield"><label for="c-pack">Packaging per order</label><div class="affix"><span>৳</span><input id="c-pack" data-k="pack" type="number" inputmode="decimal" min="0" step="5" /></div><p class="chelp">Polybag, box, tape, thank-you card…</p></div>
+            </fieldset>
+
+            <fieldset class="cgroup sr">
+              <legend><b>2</b>Orders &amp; ads (per month)</legend>
+              <div class="crow">
+                <div class="cfield"><label for="c-orders">Orders placed</label><div class="affix"><input id="c-orders" data-k="orders" type="number" inputmode="numeric" min="0" step="10" /><span class="suf">orders</span></div><p class="chelp">All confirmed orders, before returns.</p></div>
+                <div class="cfield"><label for="c-ads">Ad spend</label><div class="affix"><span>৳</span><input id="c-ads" data-k="ads" type="number" inputmode="decimal" min="0" step="1000" /></div><p class="chelp">Facebook, Instagram, Google, TikTok…</p></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="cgroup sr">
+              <legend><b>3</b>Delivery &amp; payment</legend>
+              <div class="crow">
+                <div class="cfield"><label for="c-din">Courier charge inside Dhaka</label><div class="affix"><span>৳</span><input id="c-din" data-k="dIn" type="number" inputmode="decimal" min="0" step="5" /></div></div>
+                <div class="cfield"><label for="c-dout">Courier charge outside Dhaka</label><div class="affix"><span>৳</span><input id="c-dout" data-k="dOut" type="number" inputmode="decimal" min="0" step="5" /></div></div>
+              </div>
+              <div class="cfield"><span class="lab"><label for="c-out">Orders outside Dhaka</label><output for="c-out" id="o-out"></output></span><input id="c-out" data-k="outPct" type="range" min="0" max="100" step="1" /></div>
+              <label class="switch"><input type="checkbox" id="c-cust" data-k="custPays" /><span class="sw" aria-hidden="true"></span>Customer pays the delivery charge</label>
+              <div class="cfield"><label for="c-cod">COD / bKash / Nagad fee</label><div class="affix"><input id="c-cod" data-k="codFee" type="number" inputmode="decimal" min="0" max="10" step="0.1" /><span class="suf">%</span></div><p class="chelp">Couriers usually take about 1% of the cash they collect.</p></div>
+            </fieldset>
+
+            <fieldset class="cgroup sr">
+              <legend><b>4</b>Returns</legend>
+              <div class="cfield"><span class="lab"><label for="c-ret">Orders returned or refused</label><output for="c-ret" id="o-ret"></output></span><input id="c-ret" data-k="retPct" type="range" min="0" max="60" step="1" /><p class="chelp">Parcels the customer didn't accept, for any reason.</p></div>
+              <div class="crow">
+                <div class="cfield"><label for="c-retfee">Return charge per parcel</label><div class="affix"><span>৳</span><input id="c-retfee" data-k="retFee" type="number" inputmode="decimal" min="0" step="5" /></div></div>
+                <div class="cfield"><label for="c-dmg">Returns you can't resell</label><div class="affix"><input id="c-dmg" data-k="dmgPct" type="number" inputmode="decimal" min="0" max="100" step="1" /><span class="suf">%</span></div></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="cgroup sr">
+              <legend><b>5</b>Other costs &amp; goals</legend>
+              <div class="crow">
+                <div class="cfield"><label for="c-fixed">Other monthly costs (optional)</label><div class="affix"><span>৳</span><input id="c-fixed" data-k="fixed" type="number" inputmode="decimal" min="0" step="1000" /></div><p class="chelp">Staff, rent, software, photography…</p></div>
+                <div class="cfield"><label for="c-margin">Profit margin you want</label><div class="affix"><input id="c-margin" data-k="margin" type="number" inputmode="decimal" min="0" max="90" step="1" /><span class="suf">%</span></div><p class="chelp">Used to suggest your price.</p></div>
+              </div>
+            </fieldset>
+          </form>
+
+          <div class="calc-results" aria-live="polite">
+            <section class="res glass-strong" aria-labelledby="res-title">
+              <div class="res-top">
+                <div><span class="res-label" id="res-title">Your real profit this month</span><b class="res-big" id="r-profit">৳0</b></div>
+                <span class="verdict" id="r-verdict"></span>
+              </div>
+              <p class="res-sub" id="r-sub"></p>
+              <div class="res-kpis">
+                <div class="rk" id="rk-order"><span>Profit per delivered order</span><b id="k-order"></b><small id="k-order-s"></small></div>
+                <div class="rk" id="rk-roas"><span>Real ROAS (after returns)</span><b id="k-roas"></b><small id="k-roas-s"></small></div>
+                <div class="rk" id="rk-cpo"><span>Max ad cost per order</span><b id="k-cpo"></b><small id="k-cpo-s"></small></div>
+                <div class="rk" id="rk-ret"><span>Returns cost you</span><b id="k-ret"></b><small id="k-ret-s"></small></div>
+                <div class="rk" id="rk-price"><span>Price for your target margin</span><b id="k-price"></b><small id="k-price-s"></small></div>
+                <div class="rk"><span>Break-even ROAS (in Ads Manager)</span><b id="k-beroas"></b><small>Stay above this or you lose money</small></div>
+              </div>
+              <p class="bd-title">Where each order's money goes</p>
+              <div class="bdbar" id="bdbar" role="img" aria-label="Cost breakdown per delivered order"></div>
+              <ul class="bdlegend" id="bdlegend"></ul>
+              <ul class="insights" id="insights"></ul>
+            </section>
+
+            <section class="scenario card" aria-labelledby="sc-title">
+              <h3 id="sc-title">What if returns dropped?</h3>
+              <div class="cfield" style="margin:12px 0 0"><span class="lab"><label for="sc-ret">Return rate</label><output for="sc-ret" id="o-sc"></output></span><input id="sc-ret" type="range" min="0" max="60" step="1" /></div>
+              <b class="gain" id="sc-gain"></b>
+              <p id="sc-text"></p>
+            </section>
+
+            <div class="res-actions">
+              <button class="btn btn-ghost" id="dl-report"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download report</button>
+              <button class="btn btn-ghost" id="copy-link"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span>Copy link</span></button>
+            </div>
+
+            <a class="btn btn-ghost btn-block" href="/tools/season-planner/" data-track="Plan a season with these numbers">Plan your next Eid or sale with these numbers →</a>
+
+            <section class="res-cta" aria-labelledby="cta-title">
+              <h3 id="cta-title">Want more profit from the same sales?</h3>
+              <p>We'll look at these numbers and send you 3 ways to cut returns and ad cost, free, on WhatsApp within 24 hours.</p>
+              <button class="btn btn-primary btn-block" id="calc-cta">Get my free profit plan
+                <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </section>
+          </div>
+        </div>
+
+        <div class="explain">
+          <div class="card sr"><h3>How returns are counted</h3><p>A returned parcel costs you the courier charge both ways, the packaging, any stock that can't be resold, and the ad money you spent to get that order. Most sellers only count the first one.</p></div>
+          <div class="card sr" style="--d:80ms"><h3>Ads Manager ROAS vs real ROAS</h3><p>Ads Manager counts every order placed. Real ROAS only counts orders that were delivered and paid. With 20% returns, a "5x" campaign is really 4x.</p></div>
+          <div class="card sr" style="--d:160ms"><h3>Your numbers are private</h3><p>All the maths happens in your browser. We don't see what you type. If you ask us for a free plan, only then are your numbers sent to us so we can help.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="foot-top">
+        <div class="foot-brand"><p class="foot-pitch">Performance marketing for Bangladeshi brands. Measured on revenue, not reach.</p></div>
+        <nav class="foot-cols" aria-label="Footer">
+          <div><h3>Services</h3><a href="/#services">Facebook &amp; Instagram ads</a><a href="/#services">Google &amp; YouTube</a><a href="/#services">TikTok ads</a><a href="/#services">Creatives &amp; UGC</a><a href="/#services">Tracking &amp; CAPI</a></div>
+          <div><h3>Company</h3><a href="/#results">Results</a><a href="/#process">Process</a><a href="/#pricing">Pricing</a><a href="/#grader">Ad account grader</a><a href="/#faq">FAQ</a></div>
+          <div><h3>Free products</h3><a href="/tools/profit-calculator/">Profit calculator</a><a href="/tools/season-planner/">Season planner</a><a href="/tools/ad-studio/">Ad creative studio <i class="new-tag">New</i></a><a href="/tools/" class="foot-all">All free products →</a></div>
+          <div><h3>Contact</h3><a href="#" class="js-wa" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:hello@truegreyrock.digital" data-content="email">hello@truegreyrock.digital</a><span>Dhaka, Bangladesh</span>
+            <div class="socials"><a href="#" aria-label="Facebook">Fb</a><a href="#" aria-label="Instagram">Ig</a><a href="#" aria-label="LinkedIn">In</a><a href="#" aria-label="TikTok">Tk</a></div></div>
+        </nav>
+      </div>
+      <div class="foot-mark" aria-hidden="true"></div>
+      <div class="foot-bottom"><span>© <span id="year">2026</span> Greyrock Digital. Made in Dhaka.</span><span><a href="#">Privacy</a> · <a href="#">Terms</a></span></div>
+    </div>
+  </footer>
+
+  <dialog class="modal glass-strong" id="lead-modal" aria-labelledby="lead-title">
+    <button class="icon-btn modal-close" aria-label="Close" data-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <div class="modal-body" data-step="form">
+      <p class="modal-kicker">Free profit plan</p>
+      <h2 id="lead-title">Where should we send your plan?</h2>
+      <p class="modal-sub">We'll study your numbers and send 3 ways to raise profit on WhatsApp within 24 hours.</p>
+      <form id="lead-form" novalidate>
+        <div class="field"><label for="lf-name">Your name</label><input id="lf-name" name="name" autocomplete="name" required /><p class="field-error" data-for="name"></p></div>
+        <div class="field"><label for="lf-phone">WhatsApp number</label><div class="phone"><span class="phone-prefix">+880</span><input id="lf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="1XXX-XXXXXX" required /></div><p class="field-error" data-for="phone"></p></div>
+        <div class="field"><label for="lf-url">Facebook page or website (optional)</label><input id="lf-url" name="url" inputmode="url" /></div>
+        <div class="field"><label for="lf-industry">Industry</label><select id="lf-industry" name="industry"></select></div>
+        <input type="hidden" name="source" />
+        <button type="submit" class="btn btn-primary btn-block"><span class="btn-label">Send me my free plan</span><span class="spinner" aria-hidden="true"></span></button>
+        <p class="fine center">Your calculator numbers are attached so we can help. Or <a href="#" class="js-wa" target="_blank" rel="noopener">message us on WhatsApp</a>.</p>
+      </form>
+    </div>
+    <div class="modal-body success" data-step="success" hidden>
+      <div class="success-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></svg></div>
+      <h2 tabindex="-1">Got it. Plan coming your way.</h2>
+      <p class="modal-sub">We'll message you on WhatsApp within 24 hours.</p>
+      <a href="#" class="btn btn-primary btn-block js-wa" target="_blank" rel="noopener">Chat on WhatsApp now</a>
+    </div>
+  </dialog>
+
+  <script src="/assets/js/tracker.js" defer></script>
+  <script src="/tools/tools.js" defer></script>
+  <script src="/tools/profit-calculator/calc.js" defer></script>
+</body>
+</html>

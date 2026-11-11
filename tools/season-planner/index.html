@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" data-theme="graphite">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Eid & sales season planner for Bangladeshi sellers · Greyrock Digital</title>
+  <meta name="description" content="Plan your Eid, Pohela Boishakh or 11.11 campaign: ad budget, orders, stock, creatives, a day-by-day plan and courier cut-off dates. Free sales season planner for Bangladeshi businesses." />
+  <meta name="theme-color" content="#0A0C0F" />
+  <meta property="og:title" content="Plan your Eid sale like a big brand" />
+  <meta property="og:description" content="Free planner: budget, stock, creatives and a day-by-day plan for every sales season in Bangladesh." />
+  <script src="/assets/js/site-data.js"></script>
+  <script src="/assets/js/defaults.js"></script>
+  <script src="/assets/js/site-config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/sections.css" />
+  <link rel="stylesheet" href="/tools/tools.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Primary">
+      <a href="/" class="brand" aria-label="Greyrock Digital home"><span class="brand-mark" aria-hidden="true"></span><span class="brand-sub" aria-hidden="true">digital</span></a>
+      <ul class="nav-links">
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#results">Results</a></li>
+        <li><a href="/tools/" aria-current="page">Free products</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm js-open-lead" data-source="tool:season-planner">Free audit
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </nav>
+    <div class="mobile-menu glass" id="mobile-menu" hidden>
+      <a href="/#services">Services</a><a href="/#results">Results</a><a href="/tools/">Free products</a><a href="/#pricing">Pricing</a><a href="/#faq">FAQ</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="tool-page" id="planner" aria-labelledby="plan-title">
+      <div class="tool-glow" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="container">
+        <header class="tool-head sr">
+          <a class="crumb" href="/tools/">← All free products</a>
+          <span class="kicker"><i></i>Free product · Sales season planner</span>
+          <h1 id="plan-title" class="h2">Plan your next season<br /><span class="grad-text">like a big brand.</span></h1>
+          <p class="bn" lang="bn">ঈদ, বৈশাখ, ১১.১১ — আগে থেকেই পরিকল্পনা করুন</p>
+          <p class="lead">Pick a season and a sales goal. Get the ad budget, orders, stock and creatives you'll need, a day-by-day plan, and the last safe order date before couriers jam.</p>
+          <span class="privacy-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Dates update themselves every year. Your numbers stay in your browser.</span>
+        </header>
+
+        <div class="season-row sr" role="radiogroup" aria-label="Choose a season" id="seasons"></div>
+        <div class="custom-season card" id="custom-box" hidden>
+          <div class="crow">
+            <div class="cfield"><label for="cs-name">Season name</label><div class="affix"><input id="cs-name" placeholder="e.g. Durga Puja, our anniversary sale" maxlength="40" /></div></div>
+            <div class="cfield"><label for="cs-date">Main day</label><div class="affix"><input id="cs-date" type="date" /></div></div>
+          </div>
+        </div>
+        <p class="moon-note" id="moon-note" hidden></p>
+
+        <div class="calc plan-grid">
+          <form class="calc-inputs" id="plan-form" novalidate onsubmit="return false">
+            <div class="import-note card" id="import-note" hidden></div>
+            <fieldset class="cgroup sr">
+              <legend><b>1</b>Your goal</legend>
+              <div class="cfield"><label for="p-goal">Sales you want from this season (delivered)</label><div class="affix"><span>৳</span><input id="p-goal" data-k="goal" type="number" inputmode="decimal" min="0" step="10000" /></div><p class="chelp">Money actually collected, after returns.</p></div>
+            </fieldset>
+            <fieldset class="cgroup sr">
+              <legend><b>2</b>Your numbers</legend>
+              <div class="crow">
+                <div class="cfield"><label for="p-aov">Average order value</label><div class="affix"><span>৳</span><input id="p-aov" data-k="aov" type="number" inputmode="decimal" min="1" step="50" /></div></div>
+                <div class="cfield"><label for="p-roas">ROAS you usually get (Ads Manager)</label><div class="affix"><input id="p-roas" data-k="roas" type="number" inputmode="decimal" min="0.5" step="0.1" /><span class="suf">x</span></div></div>
+              </div>
+              <div class="crow">
+                <div class="cfield"><label for="p-ret">Return rate</label><div class="affix"><input id="p-ret" data-k="ret" type="number" inputmode="decimal" min="0" max="80" step="1" /><span class="suf">%</span></div></div>
+                <div class="cfield"><label for="p-items">Items per order</label><div class="affix"><input id="p-items" data-k="items" type="number" inputmode="decimal" min="1" step="0.1" /><span class="suf">items</span></div></div>
+              </div>
+              <p class="chelp">Don't know your ROAS? Use 3 to plan safely. Use the <a href="/tools/profit-calculator/">profit calculator</a> to find your real numbers.</p>
+            </fieldset>
+          </form>
+
+          <div class="calc-results" aria-live="polite">
+            <section class="res glass-strong" aria-labelledby="pr-title">
+              <div class="res-top">
+                <div><span class="res-label" id="pr-title">Ad budget you'll need</span><b class="res-big" id="r-budget">৳0</b></div>
+                <span class="verdict good" id="r-count"></span>
+              </div>
+              <p class="res-sub" id="r-sub"></p>
+              <div class="res-kpis">
+                <div class="rk"><span>Start ads on</span><b id="k-start"></b><small id="k-start-s"></small></div>
+                <div class="rk"><span>Orders to aim for</span><b id="k-orders"></b><small id="k-orders-s"></small></div>
+                <div class="rk"><span>Stock to have ready</span><b id="k-stock"></b><small>orders + 15% safety buffer</small></div>
+                <div class="rk"><span>Ad creatives to make</span><b id="k-creatives"></b><small id="k-creatives-s"></small></div>
+                <div class="rk"><span>Average daily budget</span><b id="k-daily"></b><small id="k-daily-s"></small></div>
+                <div class="rk" id="rk-cut"><span>Last order, outside Dhaka</span><b id="k-cut"></b><small id="k-cut-s"></small></div>
+              </div>
+              <ul class="insights" id="p-insights"></ul>
+            </section>
+          </div>
+        </div>
+
+        <section class="card timeline-card sr" aria-labelledby="tl-title">
+          <div class="card-row"><div><h2 id="tl-title">Day-by-day ad budget</h2><p class="muted" id="tl-sub"></p></div>
+            <ul class="phase-legend" id="phase-legend"></ul></div>
+          <div class="tl" id="timeline" role="img"></div>
+          <div class="tl-axis" id="tl-axis" aria-hidden="true"></div>
+        </section>
+
+        <section class="card checklist-card sr" aria-labelledby="cl-title">
+          <div class="card-row"><div><h2 id="cl-title">Your checklist</h2><p class="muted">Every step, dated. Add them all to your phone calendar in one tap.</p></div>
+            <div class="res-actions">
+              <button class="btn btn-primary" id="dl-ics"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>Add to my calendar</button>
+              <button class="btn btn-ghost" id="dl-plan"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download plan</button>
+              <button class="btn btn-ghost" id="copy-link"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span>Copy link</span></button>
+            </div></div>
+          <ol class="checklist" id="checklist"></ol>
+        </section>
+
+        <section class="res-cta plan-cta sr" aria-labelledby="pcta-title">
+          <div>
+            <h3 id="pcta-title">Want us to run this season for you?</h3>
+            <p id="pcta-text">Agencies get booked weeks before every big season. Send us this plan and we'll tell you, free, how we'd run it.</p>
+          </div>
+          <button class="btn btn-primary" id="plan-cta">Send my plan, get expert feedback
+            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </section>
+
+        <div class="explain">
+          <div class="card sr"><h3>Why start this early?</h3><p>Meta needs a few days to learn who buys. Brands that test before the rush can scale winners when demand peaks, instead of learning during the most expensive days.</p></div>
+          <div class="card sr" style="--d:80ms"><h3>Courier cut-offs</h3><p>Before Eid, couriers get flooded and many people travel home. Orders outside Dhaka placed in the last few days often arrive late, and late parcels get returned.</p></div>
+          <div class="card sr" style="--d:160ms"><h3>Where the dates come from</h3><p>Eid dates are calculated with the Islamic (Umm al-Qura) calendar. In Bangladesh, Eid is usually the same day or one day later, depending on the moon. We plan around the earlier date, to be safe.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="foot-top">
+        <div class="foot-brand"><p class="foot-pitch">Performance marketing for Bangladeshi brands. Measured on revenue, not reach.</p></div>
+        <nav class="foot-cols" aria-label="Footer">
+          <div><h3>Services</h3><a href="/#services">Facebook &amp; Instagram ads</a><a href="/#services">Google &amp; YouTube</a><a href="/#services">TikTok ads</a><a href="/#services">Creatives &amp; UGC</a><a href="/#services">Tracking &amp; CAPI</a></div>
+          <div><h3>Company</h3><a href="/#results">Results</a><a href="/#process">Process</a><a href="/#pricing">Pricing</a><a href="/#grader">Ad account grader</a><a href="/#faq">FAQ</a></div>
+          <div><h3>Free products</h3><a href="/tools/profit-calculator/">Profit calculator</a><a href="/tools/season-planner/">Season planner</a><a href="/tools/ad-studio/">Ad creative studio <i class="new-tag">New</i></a><a href="/tools/" class="foot-all">All free products →</a></div>
+          <div><h3>Contact</h3><a href="#" class="js-wa" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:hello@truegreyrock.digital" data-content="email">hello@truegreyrock.digital</a><span>Dhaka, Bangladesh</span>
+            <div class="socials"><a href="#" aria-label="Facebook">Fb</a><a href="#" aria-label="Instagram">Ig</a><a href="#" aria-label="LinkedIn">In</a><a href="#" aria-label="TikTok">Tk</a></div></div>
+        </nav>
+      </div>
+      <div class="foot-mark" aria-hidden="true"></div>
+      <div class="foot-bottom"><span>© <span id="year">2026</span> Greyrock Digital. Made in Dhaka.</span><span><a href="#">Privacy</a> · <a href="#">Terms</a></span></div>
+    </div>
+  </footer>
+
+  <dialog class="modal glass-strong" id="lead-modal" aria-labelledby="lead-title">
+    <button class="icon-btn modal-close" aria-label="Close" data-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <div class="modal-body" data-step="form">
+      <p class="modal-kicker">Free plan review</p>
+      <h2 id="lead-title">Where should we send our feedback?</h2>
+      <p class="modal-sub">We'll review your season plan and reply on WhatsApp within 24 hours.</p>
+      <form id="lead-form" novalidate>
+        <div class="field"><label for="lf-name">Your name</label><input id="lf-name" name="name" autocomplete="name" required /><p class="field-error" data-for="name"></p></div>
+        <div class="field"><label for="lf-phone">WhatsApp number</label><div class="phone"><span class="phone-prefix">+880</span><input id="lf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="1XXX-XXXXXX" required /></div><p class="field-error" data-for="phone"></p></div>
+        <div class="field"><label for="lf-url">Facebook page or website (optional)</label><input id="lf-url" name="url" inputmode="url" /></div>
+        <div class="field"><label for="lf-industry">Industry</label><select id="lf-industry" name="industry"></select></div>
+        <input type="hidden" name="source" />
+        <button type="submit" class="btn btn-primary btn-block"><span class="btn-label">Send my plan</span><span class="spinner" aria-hidden="true"></span></button>
+        <p class="fine center">Your season plan is attached so we can help. Or <a href="#" class="js-wa" target="_blank" rel="noopener">message us on WhatsApp</a>.</p>
+      </form>
+    </div>
+    <div class="modal-body success" data-step="success" hidden>
+      <div class="success-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></svg></div>
+      <h2 tabindex="-1">Plan received. Talk soon.</h2>
+      <p class="modal-sub">We'll message you on WhatsApp within 24 hours.</p>
+      <a href="#" class="btn btn-primary btn-block js-wa" target="_blank" rel="noopener">Chat on WhatsApp now</a>
+    </div>
+  </dialog>
+
+  <script src="/assets/js/tracker.js" defer></script>
+  <script src="/tools/tools.js" defer></script>
+  <script src="/tools/season-planner/planner.js" defer></script>
+</body>
+</html>
